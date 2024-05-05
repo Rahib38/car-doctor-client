@@ -4,7 +4,7 @@ import parts from "..//assets/images/about_us/parts.jpg";
 const About = () => {
   return (
     <div   className="mt-5">
-      <div className="hero min-h-screen bg-base-200">
+      <div className="hero bg-base-200">
         <div className="hero-content flex-col lg:flex-row">
           <div className="lg:w-1/2 relative">
             <img
@@ -16,7 +16,7 @@ const About = () => {
               className="max-w-sm w-3/4 absolute right-5 top-1/2 border-8 border-white rounded-lg shadow-2xl"
             />
           </div>
-          <div className="lg:w-1/2 md:mt-32">
+          <div className="lg:w-1/2 mt-32">
             <h3 className="text-orange-500 font-bold">About Us </h3>
             <h1 className="md:text-5xl font-bold text-3xl">
               We are qualified & of experience in this field

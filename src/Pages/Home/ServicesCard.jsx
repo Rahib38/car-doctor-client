@@ -1,7 +1,8 @@
 import { IoMdArrowRoundForward } from "react-icons/io";
+import { Link } from "react-router-dom";
 
 const ServicesCard = ({ services }) => {
-  const { title, img, price } = services;
+  const {_id, title, img, price } = services;
   return (
     <div>
       <div className="card w-96 h-[400px] bg-base-100 shadow-xl">
@@ -12,9 +13,12 @@ const ServicesCard = ({ services }) => {
           <h2 className="card-title">{title}</h2>
           <div className="flex justify-between items-center">
             <p className="text-xl text-[#FF3811]">${price}</p>
-            <p className="text-[#FF3811]">
+            <Link to={`/bookService/${_id}`}>
+            
+            <button className="text-[#FF3811]">
               <IoMdArrowRoundForward />
-            </p>
+            </button>
+            </Link>
           </div>
           {/* <div className="card-actions justify-end">
             <div className="badge badge-outline">Fashion</div>
